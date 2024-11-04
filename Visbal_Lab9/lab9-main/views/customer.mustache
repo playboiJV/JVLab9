@@ -1,0 +1,25 @@
+<h1>Customers List</h1>
+<table border="1" cellpadding="10">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Address</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#customers}}
+        <tr>
+            <td>{{id}}</td>
+            <td>{{name}}</td>
+            <td>{{email}}</td>
+            <td>{{phone}}</td>
+            <td>{{address}}</td>
+            <td><a href="/customers/{{id}}">View Details</a></td>
+        </tr>
+        {{/customers}}
+    </tbody>
+</table>
